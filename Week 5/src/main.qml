@@ -204,11 +204,13 @@ ApplicationWindow {
                             txt_screen_song.text = "Song: " + songs[song_index]
                             txt_screen_band.text = "Band: " + bands[song_index]
                             song_current.play()
+                            txt_screen_playing.text = "Playing"
                         }
                         else
                         {
                             is_playing = false
                             song_current.pause()
+                            txt_screen_playing.text = "Paused"
                         }
                         console.log("Play button clicked!")
                     }
